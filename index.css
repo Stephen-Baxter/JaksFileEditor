@@ -1,0 +1,121 @@
+body
+{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+button
+{
+    all: unset;
+    font-family: monospace;
+}
+label
+{
+    font-family: monospace;
+}
+
+header
+{
+    background-color: rgb(60, 60, 60);
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+main
+{
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+}
+
+textarea
+{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+}
+
+input[type=file]
+{
+    display: none;
+}
+
+.DROPDOWN_
+{
+    height: 100%;
+    display: inline-block;
+}
+.DROPDOWN_BUTTON_
+{
+    background-color: silver;
+    height: calc(100% - 20px);
+    border: 10px solid rgb(60, 60, 60);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.DROPDOWN_.ACTIVE_ .DROPDOWN_BUTTON_, .DROPDOWN_BUTTON_:hover
+{
+    background-color: rgb(127, 255, 127);
+    border: 10px solid rgb(255, 127, 127);
+}
+.DROPDOWN_OPTIONS_
+{
+    background-color: silver;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+}
+.DROPDOWN_.ACTIVE_ .DROPDOWN_OPTIONS_
+{
+    display: block;
+}
+.DROPDOWN_OPTIONS_ button, .DROPDOWN_OPTIONS_ label
+{
+    padding: 10px;
+    display: block;
+    width: calc(100% - 20px);
+}
+.DROPDOWN_OPTIONS_ button:hover, .DROPDOWN_OPTIONS_ label:hover
+{
+    background-color: rgb(127, 255, 127);
+}
+
+#FILE_NAME_
+{
+    background-color: #c0c0c0;
+    height: calc(100% - 20px);
+    width: 300px;
+    border: 10px solid #3c3c3c;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+#FILE_NAME_:hover
+{
+    background-color: rgb(127, 255, 127);
+    border: 10px solid rgb(255, 127, 127);
+}
+#FILE_NAME_FIELD_
+{
+    flex: 1;
+}
+
+#ICON_
+{
+    height: 50px;
+    margin-left: auto;
+    
+}
+#ICON_ img
+{
+    height: 100%;
+    border-radius: 50%;
+}

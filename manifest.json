@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "JaksFileEditor",
+    "short_name": "JaksFileEditor",
+    "description": "A basic file editor",
+    "start_url": "/",
+    "background_color": "#3c3c3c",
+    "theme_color": "#c0c0c0",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/Stephen_Baxter_Jak_E_Chronicle_Icon_256.png",
+            "sizes": "256x256"
+        }
+    ]
+}

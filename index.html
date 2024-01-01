@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaksFileEditor</title>
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="Stephen_Baxter_Jak_E_Chronicle_Icon_256.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body onload="main()">
+    <header>
+        <div class="DROPDOWN_" onclick="MakeButtonActive(this)">
+            <button class="DROPDOWN_BUTTON_">File</button>
+            <div class="DROPDOWN_OPTIONS_">
+                <button onclick="NewTextFile()">New</button>
+                <label for="OPEN_">Open...<input type="file" name="OPEN" id="OPEN_" onchange="Open(this)"></label>
+                <hr>
+                <button onclick="SaveAS()">Save As...</button>
+            </div>
+        </div>
+        <div class="DROPDOWN_" onclick="MakeButtonActive(this)">
+            <button class="DROPDOWN_BUTTON_">Edit</button>
+            <div class="DROPDOWN_OPTIONS_">
+                <button onclick="Undo()">Undo</button>
+                <button onclick="Redo()">Redo</button>
+                <hr>
+                <button onclick="Cut()">Cut</button>
+                <button onclick="Copy()">Copy</button>
+                <button onclick="Past()">Paste</button>
+                <button onclick="Delete()">Delete</button>
+                <hr>
+                <button onclick="SelectAll()">Select All</button>
+                <hr>
+                <button onclick="InsertTab()">Insert Tab...</button>
+                <button onclick="InsertDateandTime()">Insert Date and Time...</button>
+            </div>
+        </div>
+        <label for="FILE_NAME_FIELD_" id="FILE_NAME_">Name: <input type="text" id="FILE_NAME_FIELD_"></label>
+        <a id="ICON_" title="Stephen Baxter's Website" href="https://stephen-baxter.github.io/" target="_blank"><img src = "Stephen_Baxter_Jak_E_Chronicle_Icon_256.png" alt = "Icon Image"></a>
+    </header>
+    <main>
+        <textarea name="CONTENT" id="CONTENT_"></textarea>
+    </main>
+</body>
+</html>
